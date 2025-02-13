@@ -6,3 +6,9 @@
 *.wav
 dist
 metronome_extractor.egg-info
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py.class
