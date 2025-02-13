@@ -106,19 +106,14 @@ metronome_extractor input.gp output.wav
 
   
 
--  **Customizable click sounds**:
+- **Customizable click sounds**  
+  - Allow users to select custom sound sources for metronome clicks.  
+  - Support different sounds for the first beat of each bar (accent beat).  
 
-- Allow users to select custom sound sources for metronome clicks.
-
-- Support different sounds for the first beat of each bar (accent beat).
-
--  **Extended format support**:
-
-- Add support for `.mp3` export.
-
-- Add compatibility with legacy Guitar Pro formats (`.gpx`, `.gp5`).
-
-- Implement broader Guitar Pro version compatibility.
+- **Extended format support**  
+  - Add support for `.mp3` export.  
+  - Add compatibility with legacy Guitar Pro formats (`.gpx`, `.gp5`).  
+  - Implement broader Guitar Pro version compatibility.  
 
   
 
