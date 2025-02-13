@@ -4,3 +4,5 @@
 *.gpx
 *.gpif
 *.wav
+dist
+metronome_extractor.egg-info

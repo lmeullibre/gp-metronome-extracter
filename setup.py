@@ -1,15 +1,21 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name="metronome_extractor",
-    version="0.1",
+    version="0.1.1",  
+    author="Sergi Martinez",
+    author_email="sergimartinezrodriguez@gmail.com",
+    description="A package to generate metronome tracks from Guitar Pro files.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/lmeullibre/gp-metronome-extractor",
     packages=find_packages(),
     install_requires=[
         "numpy",
     ],
-    description="A package to extract metronome tracks from .gp files",
-    author="Your Name",
-    author_email="your.email@example.com",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
