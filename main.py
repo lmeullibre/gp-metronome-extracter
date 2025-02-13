@@ -117,7 +117,6 @@ def main():
     metronome_audio = create_metronome_track(tempos, bars=total_bars)
     save_as_wav(args.output_file, metronome_audio)
     
-    # Cleanup
     os.remove(gpif_path)
     os.rmdir("temp/Content")
     os.rmdir("temp")
