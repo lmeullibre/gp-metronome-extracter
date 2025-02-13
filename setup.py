@@ -13,6 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/lmeullibre/gp-metronome-extractor",
     packages=find_packages(),
+    tests_require=["pytest"],
     install_requires=[
         "numpy",
     ],
