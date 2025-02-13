@@ -1,7 +1,6 @@
 # Guitar Pro Metronome Generator
 
-A Python script that generates a metronome track from Guitar Pro files, taking into account tempo changes throughout the piece.
-
+A Python script that generates a metronome track from Guitar Pro files.
 ## Features
 
 - Extracts tempo information from Guitar Pro (.gp) files
