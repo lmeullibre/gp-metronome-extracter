@@ -46,7 +46,7 @@ pip  install  metronome_extractor
 
   
 
-# Example: Generate a metronome track from a Guitar Pro file
+#### Example: Generate a metronome track from a Guitar Pro file
 
     input_file = "input.gp"
     
@@ -54,7 +54,7 @@ pip  install  metronome_extractor
 
   
 
-# Extract tempo information and generate the metronome track
+##### Extract tempo information and generate the metronome track
 
     tempos, total_bars = parse_tempo_changes(extract_gpif(input_file))
     
