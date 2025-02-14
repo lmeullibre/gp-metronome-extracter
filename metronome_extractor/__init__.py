@@ -1,4 +1,4 @@
-from metronome_extractor import (
+from .core import (
     extract_gpif,
     parse_tempo_changes,
     generate_click_sound,
