@@ -2,8 +2,8 @@ import numpy as np
 from metronome_extractor.core import create_metronome_track, parse_tempo_changes, generate_click_sound
 
 def test_generate_click_sound():
-    sample_rate = 44100
-    duration = 0.02
+    sample_rate = 22050
+    duration = 0.005
     frequency = 1000
 
     click = generate_click_sound(sample_rate, duration, frequency)
@@ -13,7 +13,7 @@ def test_generate_click_sound():
     expected_length = int(sample_rate * duration)
     assert len(click) == expected_length
 
-    assert np.all(click >= -32768) and np.all(click <= 32767)
+    assert np.all(click >= -128) and np.all(click <= 127)
 
 def test_parse_tempo_changes():
     xml_data = """
@@ -42,4 +42,4 @@ def test_create_metronome_track():
 
     assert isinstance(metronome_audio, np.ndarray)
 
-    assert metronome_audio.dtype == np.int16
+    assert metronome_audio.dtype == np.int8

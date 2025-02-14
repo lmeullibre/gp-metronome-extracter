@@ -82,7 +82,7 @@ metronome_extractor input.gp output.wav
 
 2. Parses the XML to find tempo changes and their positions.
 
-3. Generates click sounds at appropriate intervals.
+3. Generates optimized click sounds at appropriate intervals using a reduced sample rate and bit depth for smaller file sizes.
 
 4. Creates a WAV file with the metronome track.
 
@@ -90,18 +90,12 @@ metronome_extractor input.gp output.wav
 
 ## Technical Details
 
-* Sample rate: 44100 Hz
-
-* Audio format: 16-bit mono WAV
-
-* Click duration: 0.02 seconds
-
+* Sample rate: 22050 Hz (optimized for smaller file sizes)
+* Audio format: 8-bit mono WAV (reduces file size significantly)
+* Click duration: 0.005 seconds (shorter and sharper clicks)
 * Click frequency: 1000 Hz
 
-* Default time signature: 4/4 (four beats per bar)
-
   
-
 ## Future Work
 
   
