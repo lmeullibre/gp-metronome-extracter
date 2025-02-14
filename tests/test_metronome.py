@@ -1,5 +1,5 @@
 import numpy as np
-from metronome_extractor.main import create_metronome_track, parse_tempo_changes, generate_click_sound
+from metronome_extractor.core import create_metronome_track, parse_tempo_changes, generate_click_sound
 
 def test_generate_click_sound():
     sample_rate = 44100
